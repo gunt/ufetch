@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ufetch - Explaining Fetch Api</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ufetch - Explaining Fetch Api</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
     <header class="page-header">
       <!-- Add Logo here -->
-      <h1>A Fetch API Guide</h1>
-      <h2>Getting started with Fetch API</h2>
-      <p>Just testing</p>
+
+      <h1 id="Title">Ufetch</h1>
+
       <nav class="main-navigation page-header__item"></nav>
     </header>
 
-    <div class="pokemonContainer">
-      <h1 id="Title">Ufetch</h1>
-      <ul class="pokemon-list"></ul>
-      <div id="modal-container"></div>
+  </div>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Getting started with Fetch API</h2>
+      <form>
+        <input type="text" class="form-control" id="search" placeholder="Search For A Country">
+      </form>
     </div>
+
+    <div>
+      <button id="fetchUserDataBtn">Fetch User Data</button>
+    </div>
+    <hr />
+
+    <div id="response">
+
+    </div>
+
+
     <script src="js/promise-polyfill.js"></script>
     <script src="js/fetch-polyfill.js"></script>
     <script src="js/scripts.js"></script>
-  </body>
+</body>
+
 </html>
